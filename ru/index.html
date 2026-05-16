@@ -1,20 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Bionic Subtitles Converter Online — SRT to ASS</title>
-<meta name="description" content="Free online bionic subtitles converter: upload an SRT file and download ASS subtitles with bold word beginnings in a bionic reading style.">
+<title>Конвертер бионических субтитров онлайн — Bionic Subtitles</title>
+<meta name="description" content="Бесплатный онлайн-конвертер бионических субтитров: загрузите SRT и скачайте ASS-файл с выделенными началами слов в стиле bionic reading.">
 <meta name="robots" content="index, follow">
 <meta name="theme-color" content="#12121a">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Bionic Subtitles Converter Online — SRT to ASS">
-<meta property="og:description" content="Upload an SRT file and get ASS subtitles with bold word beginnings in a bionic reading style.">
+<meta property="og:title" content="Конвертер бионических субтитров онлайн — Bionic Subtitles">
+<meta property="og:description" content="Загрузите SRT-файл и получите ASS-субтитры с выделенными началами слов в стиле бионического чтения.">
 <meta property="og:site_name" content="Bionic Subtitles">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Bionic Subtitles Converter">
 <meta name="twitter:description" content="Online SRT to ASS converter for bionic reading subtitles.">
-<link rel="prefetch" href="ru/">
+<link rel="prefetch" href="../">
 <!-- After publishing, add your final production URL here:
 <link rel="canonical" href="https://your-domain.example/">
 -->
@@ -668,13 +668,13 @@
   <header class="header">
     <div class="logo">
       <div class="logo-icon">Bn</div>
-      <h1 class="logo-text"><span>Bionic</span> Subtitles</h1>
+      <h1 class="logo-text">Бионические <span>субтитры</span></h1>
     </div>
-    <p class="subtitle">Bionic reading subtitle converter.<br>Upload SRT — get ASS with bold-anchored word beginnings.</p>
+    <p class="subtitle">Конвертер субтитров в стиле бионического чтения.<br>Загрузи SRT — получи ASS с выделенными первыми буквами слов.</p>
     <nav class="language-switch" aria-label="Language versions">
-      <a href="./" lang="en" aria-current="page">EN</a>
+      <a href="../" lang="en">EN</a>
       <span>/</span>
-      <a href="ru/" lang="ru">RU</a>
+      <a href="./" lang="ru" aria-current="page">RU</a>
     </nav>
   </header>
 
@@ -683,8 +683,8 @@
       <div class="dropzone" id="dropzone">
         <input type="file" accept=".srt" id="fileInput">
         <span class="dropzone-icon">📄</span>
-        <div class="dropzone-label">Drop your SRT file here</div>
-        <div class="dropzone-hint">or click to choose a file</div>
+        <div class="dropzone-label">Перетащи SRT-файл сюда</div>
+        <div class="dropzone-hint">или нажми, чтобы выбрать файл</div>
       </div>
 
       <div class="file-info" id="fileInfo">
@@ -693,65 +693,65 @@
           <div class="file-name" id="fileName"></div>
           <div class="file-stats" id="fileStats"></div>
         </div>
-        <button class="file-remove" id="fileRemove" title="Remove">×</button>
+        <button class="file-remove" id="fileRemove" title="Удалить">×</button>
       </div>
 
       <div class="size-panel" id="sizePanel">
         <div class="size-panel-header">
-          <div class="size-panel-label">Subtitle size <span class="size-panel-value" id="fontSizeVal">66</span></div>
+          <div class="size-panel-label">Размер субтитров <span class="size-panel-value" id="fontSizeVal">66</span></div>
         </div>
         <input type="range" id="fontSize" min="32" max="120" value="66" step="2">
-        <div class="size-note">IMPORTANT: ASS subtitle font size is fixed and cannot be changed in player settings. If the default size doesn't fit — adjust it here before converting.</div>
+        <div class="size-note">ВАЖНО: Шрифт в формате ASS имеет фиксированный размер и не меняется настройками плеера. Если размер по умолчанию не подошёл — выберите другой здесь, перед конвертацией.</div>
       </div>
 
       <div class="preview" id="preview">
-        <div class="preview-title">Preview</div>
+        <div class="preview-title">Превью</div>
         <div class="preview-screen">
           <div class="preview-sub" id="previewText"></div>
         </div>
         <div class="preview-nav">
-          <button id="prevBtn">← Prev</button>
+          <button id="prevBtn">← Пред.</button>
           <span class="preview-counter" id="previewCounter"></span>
-          <button id="nextBtn">Next →</button>
+          <button id="nextBtn">След. →</button>
         </div>
       </div>
 
-      <button class="convert-btn" id="convertBtn">Download ASS file</button>
+      <button class="convert-btn" id="convertBtn">Скачать ASS-файл</button>
 
       <div class="done" id="done">
         <div class="done-icon">✅</div>
-        <div class="done-text">File downloaded!</div>
-        <div class="done-hint">Place the ASS file next to your video — the player will pick it up automatically.</div>
+        <div class="done-text">Файл скачан!</div>
+        <div class="done-hint">Положи ASS-файл рядом с видео — плеер подхватит автоматически.<br>VLC: чтобы менять размер субтитров, зайди в <b>Инструменты → Настройки → Субтитры</b> и сними галку <b>«Переопределить размер шрифта»</b></div>
       </div>
     </main>
 
     <aside class="seo-content" aria-labelledby="aboutToolTitle">
-    <h2 id="aboutToolTitle">Bionic Subtitles — SRT to ASS converter</h2>
+    <h2 id="aboutToolTitle">Bionic Subtitles — конвертер бионических субтитров</h2>
     <p>
-      A free online tool for turning regular SRT subtitles into ASS subtitles
-      in a bionic reading style. The converter makes the beginning of each word bold,
-      shows a quick preview and saves the result as a new ASS subtitle file.
+      Бесплатный онлайн-инструмент для превращения обычных SRT-субтитров в ASS-субтитры
+      в стиле бионического чтения. Конвертер выделяет жирным начало каждого слова,
+      показывает превью результата и сохраняет новый файл в формате ASS.
     </p>
 
-    <h3>How to use it</h3>
+    <h3>Как пользоваться</h3>
     <ol>
-      <li>Upload or drop an SRT file into the converter.</li>
-      <li>Check the preview and adjust the subtitle size if needed.</li>
-      <li>Download the ASS file and place it next to your video.</li>
+      <li>Загрузите или перетащите SRT-файл в окно конвертера.</li>
+      <li>Проверьте превью и при необходимости измените размер субтитров.</li>
+      <li>Скачайте ASS-файл и положите его рядом с видео.</li>
     </ol>
 
-    <h3>Result example</h3>
+    <h3>Пример результата</h3>
     <div class="seo-example">
-      <p><strong>Before:</strong> I need to finish this episode before tomorrow.</p>
-      <p><strong>After:</strong> <b>I</b> <b>ne</b>ed <b>to</b> <b>fin</b>ish <b>th</b>is <b>epi</b>sode <b>bef</b>ore <b>tomo</b>rrow.</p>
+      <p><strong>До:</strong> «Всякая морда благоразумного фасона вызывает во мне неприятное ощущение.» Даниил Хармс</p>
+      <p><strong>После:</strong> «<b>Вся</b>кая <b>мо</b>рда <b>благора</b>зумного <b>фа</b>сона <b>вызы</b>вает <b>во</b> мне <b>неприя</b>тное <b>ощуще</b>ние.» <b>Да</b>ниил <b>Ха</b>рмс</p>
     </div>
 
-    <h3>What happens to your file</h3>
+    <h3>Что происходит с файлом</h3>
     <p>
-      The file is processed locally in your browser: subtitles are not uploaded to a server.
-      Bionic Subtitles works as an SRT to ASS converter and a bionic reading subtitle converter
-      for video creators, editors, podcasters and anyone who wants subtitles that are easier
-      to scan quickly.
+      Файл обрабатывается локально в браузере: субтитры не отправляются на сервер.
+      Инструмент работает как SRT to ASS converter и bionic reading subtitle converter
+      для авторов видео, монтажёров, подкастеров и всех, кто хочет сделать субтитры
+      визуально легче для быстрого чтения.
     </p>
     </aside>
   </div>
